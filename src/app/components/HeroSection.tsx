@@ -1,26 +1,33 @@
 'use client'
 
 
+
 export default function HeroSection() {
   return (
-    <section className="w-full py-24 text-center px-4 bg-background">
-      <h1 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-        SNSに投稿する前に。
-      </h1>
-      <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-        感情があふれそうになったとき、誰かに伝えたくなる。
-        <br />
-        でも、後悔したくない。誰かを傷つけたくない。
-        <br />
-        <span className="inline-block mt-4">
-          <strong>Seen</strong> は、感情を静かに書き出せる、匿名の“擬似SNS”です。
-        </span>
-      </p>
-      <a href="#demo">
-        <button className="text-sm px-6 py-3 rounded-md bg-primary text-white hover:opacity-90 transition">
-          今すぐ投稿してみる
-        </button>
-      </a>
-    </section>
-  )
-}
+        <section
+          className="relative w-full h-[90vh] text-slate-100 flex items-center justify-center"
+        >
+    
+          {/* オーバーレイ（やや暗くして文字を読みやすく） */}
+          <div className="absolute inset-0 bg-black/30 z-10" />
+    
+          {/* コンテンツ */}
+          <div className="relative z-20 text-center px-6 max-w-2xl">
+            <h1 className="text-4xl sm:text-5xl font-serif tracking-wide mb-6">
+              Seen
+            </h1>
+            <p className="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8">
+              Seenは、感情を投稿できる。<br />
+              だけど誰にも見られない。<br />
+              そんな“SNS風”アプリです。
+            </p>
+            <a href="#cta">
+              <button className="px-6 py-3 bg-indigo-700 text-white rounded-lg shadow-md hover:scale-105 transition">
+                今すぐ投稿してみる
+              </button>
+            </a>
+          </div>
+        </section>
+      )
+    }
+    
