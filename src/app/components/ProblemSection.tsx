@@ -1,5 +1,3 @@
-// components/ProblemSection.tsx
-
 export default function ProblemSection() {
   return (
     <section id="problem" className="space-y-6">

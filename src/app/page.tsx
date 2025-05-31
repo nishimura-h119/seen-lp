@@ -1,9 +1,9 @@
-import HeroSection from "./components/HeroSection";
-import ProblemSection from "./components/ProblemSection";
-import FeatureSection from "./components/FeatureSection";
-// import DemoSection from "./components/DemoSection";
-// import WorldSection from "./components/WorldSection";
-import CtaSection from "./components/CtaSection";
+import HeroSection from "@/app/components/HeroSection";
+import ProblemSection from "@/app/components/ProblemSection";
+import FeatureSection from "@/app/components/FeatureSection";
+// import DemoSection from "@/app/components/DemoSection";
+// import WorldSection from "@/app/components/WorldSection";
+import CtaSection from "@/app/components/CtaSection";
 
 export default function Home() {
   return (
