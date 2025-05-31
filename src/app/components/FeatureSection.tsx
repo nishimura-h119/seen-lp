@@ -1,35 +1,34 @@
-'use client'
-export default function FeatureSection() {
+export default function FeaturesSection() {
   return (
-    <section className="w-full py-24 text-center px-4 bg-background">
-      <h2 className="text-2xl font-semibold mb-6">Seenでできること</h2>
-
-      <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-2 text-left">
-        <div className="p-6 border rounded-xl bg-background shadow-sm">
-          <h3 className="text-lg font-semibold mb-2">感情を書き出せる“投稿”</h3>
-          <p className="text-muted-foreground text-sm">
-            誰にも見られない安心感の中で、自分の気持ちを自由に書き出せます。
+    <section id="features" className="space-y-6">
+      <h2 className="text-2xl font-bold">Seenでできること</h2>
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-zinc-300">
+        <li className="bg-zinc-800 p-4 rounded-xl">
+          <h3 className="font-semibold text-white">GPTによる架空の反応</h3>
+          <p className="text-sm mt-1">
+            あなたの投稿に、AIがやさしいリアクションを返します。
+            誰かに届いたような安心感を演出します。
           </p>
-        </div>
-        <div className="p-6 border rounded-xl bg-background shadow-sm">
-          <h3 className="text-lg font-semibold mb-2">架空のリアクション</h3>
-          <p className="text-muted-foreground text-sm">
-            投稿には、共感を伝える“反応”が返ってきます。実在しないからこそ安心できる言葉たち。
+        </li>
+        <li className="bg-zinc-800 p-4 rounded-xl">
+          <h3 className="font-semibold text-white">非公開のクローズド投稿</h3>
+          <p className="text-sm mt-1">
+            投稿は完全に自分専用。誰にも見られず、自由に気持ちを吐き出せます。
           </p>
-        </div>
-        <div className="p-6 border rounded-xl bg-background shadow-sm">
-          <h3 className="text-lg font-semibold mb-2">過去の投稿が残る</h3>
-          <p className="text-muted-foreground text-sm">
-            あなたが綴った感情は、タイムラインに静かに積み重なっていきます。
+        </li>
+        <li className="bg-zinc-800 p-4 rounded-xl">
+          <h3 className="font-semibold text-white">感情を落ち着けるUI</h3>
+          <p className="text-sm mt-1">
+            落ち着いた配色とシンプルなUIで、感情の整理を妨げません。
           </p>
-        </div>
-        <div className="p-6 border rounded-xl bg-background shadow-sm">
-          <h3 className="text-lg font-semibold mb-2">誰にも見られない設計</h3>
-          <p className="text-muted-foreground text-sm">
-            完全クローズド。あなたの投稿は誰にも届かず、保存も共有もされません。
+        </li>
+        <li className="bg-zinc-800 p-4 rounded-xl">
+          <h3 className="font-semibold text-white">スマホ対応</h3>
+          <p className="text-sm mt-1">
+            スマホでも使いやすく、外出先でも安心して書き出せます。
           </p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
-  )
+  );
 }

@@ -1,19 +1,17 @@
-'use client'
-export default function CTASection() {
+export default function CtaSection() {
   return (
-    <section className="w-full py-20 px-4 bg-muted/50 text-center">
-      <h2 className="text-2xl font-semibold mb-4">このまま終わらせずに、少しだけ吐き出してみませんか？</h2>
-      <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-        誰かに言うほどじゃない。でも、このまま胸の中に溜めておくのも苦しい。
-        <br />
-        Seenなら、感情を投稿するだけで、そっと返事がもらえます。
+    <section id="cta" className="space-y-6 text-center">
+      <h2 className="text-2xl font-bold">あなたの気持ち、ここに書いてみませんか？</h2>
+      <p className="text-zinc-300">
+        誰にも見られず、でもちゃんと届く。<br />
+        Seenは、あなたの心を受け止める場所です。
       </p>
-
-      <a href="#demo">
-        <button className="text-sm px-6 py-3 rounded-md bg-primary text-white hover:opacity-90 transition">
-          今すぐ投稿してみる
-        </button>
+      <a
+        href="https://your-app-url.com"
+        className="inline-block bg-white text-black px-6 py-3 rounded-xl font-medium hover:bg-zinc-200 transition"
+      >
+        アプリを開く
       </a>
     </section>
-  )
+  );
 }
