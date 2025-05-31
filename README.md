@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Seen｜感情を落ち着いて書き出せる、クローズドSNS風アプリ
 
-## Getting Started
+<p align="center">
+  <img src="./public/images/og-image.png"   alt="Seen Hero" width="600"/>
+</p>
 
-First, run the development server:
+## 📝 プロジェクト概要
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+このリポジトリは、架空プロダクト「Seen」の**ランディングページ（LP）**を制作するプロジェクトです。  
+「Seen」は、感情的な投稿に後悔した経験のある人に向けて、  
+**“誰にも見られずに感情を吐き出せる”クローズドSNS風アプリ**をコンセプトとしています。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+現在は LP の構成・UI・コピー設計に注力しており、アプリ本体は未実装です。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔗 公開先・関連リンク
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🔗 [LPデモを見る](https://xxxxx.vercel.app)
+- 🖌️ [Figmaデザイン](https://www.figma.com/design/LSIV8C5USGhu1bXSjeKVqW/Seen?node-id=0-1&t=g1qDd2W9hV1XfdLv-1)
+- 🛠️ [GitHubリポジトリ](https://github.com/nishimura-h119/seen-lp)
 
-## Learn More
+## 🎨 担当領域
 
-To learn more about Next.js, take a look at the following resources:
+- FigmaでのUIデザイン
+- LP構成設計（セクション分割・導線設計）
+- コーディング（レスポンシブ対応含む）
+- コピーライティング（LP文章作成）
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 技術スタック
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| 項目           | 使用技術                                      |
+| -------------- | --------------------------------------------- |
+| フロントエンド | Next.js (App Router), Tailwind CSS, Shadcn UI |
+| 言語           | TypeScript                                    |
+| デプロイ       | Vercel                                        |
+| その他         | OpenAI API（※機能追加予定）                   |
 
-## Deploy on Vercel
+## 💡 工夫したポイント
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **GPTによる架空リアクション**でユーザーの感情整理をサポート
+- **モバイル中心の構成**を意識し、スマホでも没入感があるUIに設計
+- **色彩設計・余白・タイポグラフィ**を通して「静かな安心感」を演出
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚧 今後の展望（ToDo）
+
+- ログイン機能の追加（現在はスタティックLPのみ）
+- GPTとのやり取りを保存できる履歴機能
+- 投稿のテーマに応じた反応分類アルゴリズムの調整
