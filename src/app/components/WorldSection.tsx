@@ -1,24 +1,44 @@
-'use client'
+"use client";
 
 export default function WorldSection() {
   return (
-    <section className="w-full py-24 text-center px-4 bg-background">
-      <h2 className="text-2xl font-semibold mb-6">言葉にできる場所があるだけで、少し救われる。</h2>
-
-      <div className="max-w-2xl mx-auto text-muted-foreground space-y-6 text-base leading-relaxed">
-        <p>
-          SNSは便利だけれど、ときに言葉が鋭く突き刺さることもある。  
-          ほんの少しの気持ちを吐き出したかっただけなのに、余計に傷ついてしまうことだってある。
-        </p>
-        <p>
-          Seenは、そんなときに“ひとりごと”のように使える場所。  
-          誰にも見られない安心感の中で、あなたの気持ちに寄り添う反応だけが返ってきます。
-        </p>
-        <p>
-          吐き出すこと。書き出すこと。  
-          それだけで心が整う瞬間が、きっとあるはずです。
-        </p>
-      </div>
+    <section id="world" className="">
+      <p className="text-2xl leading-[1.7] tracking-[0.11em] font-semiBold ShipporiMincho-Regular flex justify-center my-9">
+        言葉にできる場所があるだけで、
+        <br />
+        少し救われる。
+      </p>
+      <p className="text-[17px] leading-[1.5] tracking-[0.14em] ShipporiMincho-Regular pb-13 mx-8">
+        SNSは便利だけれど、
+        <br />
+        ときに言葉が鋭く突き刺さることもある。 <br />
+        <br />
+        ほんの少しの気持ちを
+        <br />
+        吐き出したかっただけなのに、
+        <br />
+        余計に傷ついてしまうことだってある。
+        <br />
+        <br />
+        Seenは、そんなときに
+        <br />
+        “ひとりごと” のように使える場所。
+        <br />
+        <br />
+        誰にも見られない安心感の中で、
+        <br />
+        あなたの気持ちに寄り添う反応だけが
+        <br />
+        返ってきます。
+        <br />
+        <br />
+        吐き出すこと。書き出すこと。
+        <br />
+        それだけで心が整う瞬間が、
+        <br />
+        きっとあるはずです。
+        <br />
+      </p>
     </section>
-  )
+  );
 }
