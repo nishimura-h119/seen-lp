@@ -10,7 +10,7 @@ import { Menu } from "lucide-react";
 export default function HamburgerMenu() {
   return (
     <Sheet>
-      <SheetTrigger className="mt-8 mr-10">
+      <SheetTrigger className="">
         <Menu className="w-12 h-12 text-[#CBBFA1]" />
       </SheetTrigger>
       <SheetContent side="right" className="bg-zinc-900 text-white">

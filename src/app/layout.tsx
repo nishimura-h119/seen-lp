@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import "./globals.css";
 import HamburgerMenu from "@/app/components/HamburgerMenu";
+import StarCanvas from "@/app/components/StarCanvas";
 
 export const metadata: Metadata = {
   title: "Seen - 誰にも見られないSNS風アプリ",
@@ -25,8 +26,8 @@ export default function RootLayout({
       >
         <div className="flex h-screen overflow-hidden">
           {/* 固定背景 */}
-          <div className="w-1/2 h-screen relative">
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 mt-25 z-10 space-y-6 ">
+          <div className="w-3/5 h-screen relative">
+            <div className="absolute inset-0 flex flex-col items-center justify-end text-center px-6 mb-27 z-10 space-y-15 ">
               <Image
                 src="/images/title-main.svg"
                 alt="Seenのロゴ"
@@ -45,16 +46,16 @@ export default function RootLayout({
           </div>
 
           {/* スクロールUI */}
-          <div className="w-1/2 h-screen flex items-center justify-center relative mt-8">
-            <div className="w-1/2 h-screen overflow-y-scroll no-scrollbar bg-[#143841] rounded-[32px] shadow-xl">
+          <div className="w-1/3 h-screen flex items-center justify-center relative mt-14">
+            <div className="w-[440px] h-screen overflow-y-scroll no-scrollbar bg-[#143841] rounded-[60px] shadow-xl">
               {children}
             </div>
           </div>
-          <div>
-            {/* ハンバーガーメニュー */}
+          <div className="w-[142px] flex justify-center mt-10 items-start ">
             <HamburgerMenu />
           </div>
         </div>
+        <StarCanvas />
       </body>
     </html>
   );
